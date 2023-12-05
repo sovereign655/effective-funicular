@@ -1,0 +1,91 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main Calculator Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Adjust as needed */
+    flex-grow: 1;
+}
+
+#calculator {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */ 
+    border-radius: 5px;  
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px;   
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calc-screen {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd; /* Light grey border */ 
+    border-radius: 5px;  
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex-grow:.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.previous-input {
+    font-size: small;
+}
+
+.input-field {
+    font-size: large;
+}
+.calc-buttons {
+    background-color:#f4f4f4;
+    border: 1px solid #ddd; /* Light grey border */ 
+    border-radius: 5px;  
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex-grow:3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark grey background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+}
