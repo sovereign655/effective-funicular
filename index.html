@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effective Funicular - Calculator</title>
-    <link rel="stylesheet" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Effective Funicular - Calculator</title>
+	<link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="top"><h1>Effective Funicular Calculator</h1></div>
-        
-        <!-- You can add more header content here like a nav bar if needed -->
-    </header>
+	<header>
+		<div class="top">
+			<h1>Effective Funicular Calculator</h1>
+		</div>
+	</header>
 
-    <main>
-        <div id="calculator">
-            <div class="calc-screen">
-                <div class="previous-input">history display</div>
-                <div class="input-field">current input display</div>
-            </div>
-            <div class="calc-buttons">
-                buttons
-            </div>
-            <!-- Calculator layout goes here -->
-            <!-- You can use input fields for the calculator display and buttons for numbers and operations -->
-        </div>
-    </main>
+	<main>
+		<div id="calculator">
+			<div class="calc-screen">
+				<div class="previous-input" id="history">history display</div>
+				<div class="input-field" id="input">current input display</div>
+			</div>
+			<div class="calc-buttons">
+				<!-- top row  -->
+				<button class="btn-operator wide" id="clear">AC</button>
+				<button class="btn-operator wide" id="backspace">CE</button>
+				<!-- row 1 -->
+				<button class="btn-number" id="7">7</button>
+				<button class="btn-number" id="8">8</button>
+				<button class="btn-number" id="9">9</button>
+				<button class="btn-operator" id="/">/</button>
+				<!-- row 2 -->
+				<button class="btn-number" id="4">4</button>
+				<button class="btn-number" id="5">5</button>
+				<button class="btn-number" id="6">6</button>
+				<button class="btn-operator" id="*">x</button>
+				<!-- row 3 -->
+				<button class="btn-number" id="1">1</button>
+				<button class="btn-number" id="2">2</button>
+				<button class="btn-number" id="3">3</button>
+				<button class="btn-operator" id="-">-</button>
+				<!-- row 4 -->
+				<button class="btn-number" id=".">.</button>
+				<button class="btn-number" id="0">0</button>
+				<button class="btn-operator" id="+">+</button>
+				<button class="btn-operator" id="=">=</button>
+			</div>
+		</div>
+		</div>
+	</main>
 
-    <footer>
-        <div class="bottom"><p>© 2023 Effective Funicular. MIT license.</p></div>
-        
-        <!-- Additional footer content can go here -->
-    </footer>
+	<footer>
+		<div class="bottom">
+			<p>© 2023 Effective Funicular. MIT license.</p>
+		</div>
+	</footer>
 </body>
 <script src="./js/script.js"></script>
+
 </html>
